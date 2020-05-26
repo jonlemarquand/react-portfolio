@@ -7,10 +7,14 @@ import Blog from './containers/Blog';
 import Contact from './containers/Contact';
 import Work from './containers/Work';
 
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Switch>
           <Route path="/about">
             <About />
@@ -25,6 +29,7 @@ function App() {
             <Work />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
