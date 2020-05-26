@@ -1,0 +1,10 @@
+@import 'assets/colours';
+
+.logo {
+    font-size: 24px;
+    border-bottom: 3px solid $lblue;
+    line-height: 1;
+    margin: 0 20px;
+    color: $dblue;
+    font-weight: 700;
+}

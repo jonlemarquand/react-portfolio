@@ -1,0 +1,48 @@
+@import 'assets/colours';
+
+.work-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    color: $dblue;
+    .filter-intro {
+        padding: 5px 10px;
+        width: 120px;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 0 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-weight: 700;
+
+        &.filter-active {
+            background-color: $lblue;
+            color: $offwhite;
+        }
+        }
+    }
+}
+
+.workgrid {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 242px);
+    grid-template-rows: repeat(3, 187px);
+    margin: 40px 0;
+}

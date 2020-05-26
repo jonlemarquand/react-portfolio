@@ -1,0 +1,26 @@
+@import 'assets/colours';
+
+.aboutPage {
+    display: flex;
+    max-width: 1200px;
+    p {
+        color: $dblue;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .skills {
+        width: 50%;
+        margin-right: 30px;
+        text-align: right;
+        h2 {
+            margin-top: 40px;
+        }
+    
+    }
+    
+    .about-me {
+        width: 50%;
+        margin-left: 30px;
+    }
+
+}
+

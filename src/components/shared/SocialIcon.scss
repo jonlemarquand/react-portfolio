@@ -1,0 +1,72 @@
+@import 'assets/colours';
+
+.social {
+    border: $grey 2px solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .socialIcon {
+        display: inline-block;
+        background-size: cover;
+        transition: all 0.4s ease;
+
+        filter: invert(55%) sepia(4%) saturate(13%) hue-rotate(314deg) brightness(92%) contrast(92%);
+    &.github{
+        height: 32px;
+        width: 32px;
+        &:hover {
+        filter: invert(96%) sepia(2%) saturate(660%) hue-rotate(188deg) brightness(103%) contrast(97%);
+        cursor: pointer;
+        }
+    }
+    &.twitter{
+        height: 23px;
+        width: 23px;
+        &:hover {
+        filter: invert(96%) sepia(2%) saturate(660%) hue-rotate(188deg) brightness(103%) contrast(97%);
+        cursor: pointer;
+        }
+    }
+    &.linkedin{
+        height: 28px;
+        width: 28px;
+        &:hover {
+        filter: invert(96%) sepia(2%) saturate(660%) hue-rotate(188deg) brightness(103%) contrast(97%);
+        cursor: pointer;
+        }
+    }
+    }
+
+    &.github {
+        background: url(../../assets/images/socials/github-new-01.svg);
+        background-size: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    &.twitter {
+        background: url(../../assets/images/socials/twitter.svg);
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &.linkedin {
+        background: url(../../assets/images/socials/linkedin-new2.svg);
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        background-color: $lblue;
+        border: $lblue 2px solid;
+        cursor: pointer;
+    }
+}

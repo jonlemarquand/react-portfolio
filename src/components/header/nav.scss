@@ -1,0 +1,22 @@
+@import 'assets/colours';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    a {
+        color: $grey;
+        margin: 0 20px;
+        font-size: 14px;
+        &:hover {
+            color: $dblue;
+        }
+        &.active {
+            color: $lblue;
+        }
+    }
+
+}
