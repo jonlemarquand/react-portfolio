@@ -1,0 +1,12 @@
+.blog-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 750px;
+    margin-bottom: 40px;
+
+    .blog-text {
+        max-width: 600px;
+    }
+
+}

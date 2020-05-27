@@ -1,11 +1,16 @@
 import React from "react";
 
+import BlogSummary from '../components/blog/BlogSummary';
+
 import Layout from '../components/shared/Layout';
 
 const Blog = () => {
     return (
         <Layout>
-            <div>Blog test</div>
+            <h1>Blog</h1>
+            <BlogSummary />
+            <BlogSummary />
+            <BlogSummary />
         </Layout>
     )
 }

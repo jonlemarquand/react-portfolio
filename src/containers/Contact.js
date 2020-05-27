@@ -5,7 +5,7 @@ import Layout from '../components/shared/Layout';
 const Contact = () => {
     return (
         <Layout>
-            <div>Contact test</div>
+            <h1>Contact</h1>
         </Layout>
     )
 }
