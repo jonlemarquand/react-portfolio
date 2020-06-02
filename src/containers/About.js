@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from 'react-router';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5, faCss3Alt, faFigma } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/shared/Layout';
 
@@ -15,6 +16,9 @@ const About = () => {
                     <h2>Front-End</h2>
                     <p>React</p>
                     <p>SASS, LESS</p>
+                    <FontAwesomeIcon icon={faHtml5} />
+                    <FontAwesomeIcon icon={faCss3Alt} />
+                    <FontAwesomeIcon icon={faFigma} />
                     <p>HTML, CSS, Javascript</p>
                     <h2>Back-End</h2>
                     <p>Node, Express, PHP</p>
