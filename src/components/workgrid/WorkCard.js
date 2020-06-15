@@ -3,7 +3,7 @@ import React from "react"
 
 import "./WorkCard.scss"
 
-const WorkCard = ({ title, stack, gridImg, onClick }) => {
+const WorkCard = ({ title, stack, gridImg, onClick, dataID }) => {
   return (
     <div className="item">
       <img className="item-img" src={require(`../../assets/images/${gridImg}`)} alt={title} />
@@ -12,7 +12,6 @@ const WorkCard = ({ title, stack, gridImg, onClick }) => {
           <div className="explainer">{stack}</div>
           <div className="project-title">{title}</div>
         </div>
-        <div className="button project-button">View More</div>
       </div>
     </div>
   )

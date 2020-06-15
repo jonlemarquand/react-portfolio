@@ -1,72 +1,46 @@
 @import 'assets/colours';
 
 .social {
-    border: $grey 2px solid;
-    height: 30px;
-    width: 30px;
     border-radius: 50%;
+    border: 2px solid $grey;
     margin: 10px;
     transition: all 0.4s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .socialIcon {
-        display: inline-block;
-        background-size: cover;
-        transition: all 0.4s ease;
-
-        filter: invert(55%) sepia(4%) saturate(13%) hue-rotate(314deg) brightness(92%) contrast(92%);
-    &.github{
-        height: 32px;
-        width: 32px;
-        &:hover {
-        filter: invert(96%) sepia(2%) saturate(660%) hue-rotate(188deg) brightness(103%) contrast(97%);
+    transition: all 0.4s ease;
+    height: 35px;
+    width: 35px;
+    &:hover {
+        border: 2px solid $lblue;
         cursor: pointer;
-        }
-    }
-    &.twitter{
-        height: 23px;
-        width: 23px;
-        &:hover {
-        filter: invert(96%) sepia(2%) saturate(660%) hue-rotate(188deg) brightness(103%) contrast(97%);
-        cursor: pointer;
-        }
-    }
-    &.linkedin{
-        height: 28px;
-        width: 28px;
-        &:hover {
-        filter: invert(96%) sepia(2%) saturate(660%) hue-rotate(188deg) brightness(103%) contrast(97%);
-        cursor: pointer;
-        }
-    }
-    }
-
+        background: $lblue;
+    }   
     &.github {
-        background: url(../../assets/images/socials/github-new-01.svg);
+        background-image: url(../../assets/images/socials/github-grey.png);
         background-size: 100%;
         background-position: bottom;
         background-repeat: no-repeat;
+        &:hover {
+            background-image: url(../../assets/images/socials/github-white.png)
+        }
     }
-
     &.twitter {
-        background: url(../../assets/images/socials/twitter.svg);
-        background-size: 70%;
-        background-position: center;
+        background-image: url(../../assets/images/socials/twitter-grey.png);
+        background-size: 100%;
+        background-position: bottom;
         background-repeat: no-repeat;
+        &:hover {
+            background-image: url(../../assets/images/socials/twitter-white.png)
+        }
     }
-
     &.linkedin {
-        background: url(../../assets/images/socials/linkedin-new2.svg);
-        background-size: 90%;
-        background-position: center;
+        background-image: url(../../assets/images/socials/linkedin-grey.png);
+        background-size: 100%;
+        background-position: bottom;
         background-repeat: no-repeat;
-    }
-
-    &:hover {
-        background-color: $lblue;
-        border: $lblue 2px solid;
-        cursor: pointer;
+        &:hover {
+            background-image: url(../../assets/images/socials/linkedin-white.png)
+        }
     }
 }

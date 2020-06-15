@@ -10,7 +10,14 @@ import "./WorkGrid.scss"
 const WorkGrid = () => {
     const [showWorkModal, setShowWorkModal] = useState(false);
     const [filterTarget, setFilterTarget] = useState("all");
-    const [modalData, setModalData] = useState("");
+    const [gridDataID, setGridDataID] = useState(1);
+    const [modalData, setModalData] = useState({
+        title: '',
+        stack: ["React", "Node"],
+    });
+    const [modalTitle, setModalTitle] = useState("");
+    const [modalStack, setModalStack] = useState(["React", "Node"]);
+    const [modalImage, setModalImage] = useState("slide_abg1.jpg")
 
 
 
@@ -28,57 +35,65 @@ const WorkGrid = () => {
         document.querySelector(`[data-value=${filterTarget}]`).classList.toggle("filter-active");
     }
 
-    useEffect(setFilterActive);
+    useEffect(setFilterActive, [filterTarget]);
 
     const filterData = GridData.filter( (data) => {
-        return data.stack.includes(filterTarget)
+        return data.filterStack.includes(filterTarget)
     });
-
-    const testingData = () => console.log(filterData);
 
     const chooseData = (filterTarget === "all") ? GridData : filterData;
 
-    const changeModalData = (title) => {
-        setModalData(title);
-        console.log(modalData);
+    const changeModalData = () => {
+        setModalTitle(GridData[gridDataID].title);
+        setModalImage(GridData[gridDataID].gridImg);
+        setModalStack(GridData[gridDataID].stack);
     }
 
-    const workCardAction = (title) => {
+    const workCardAction = () => {
+        changeModalData();
         openWorkModalHandler();
     }
+
+    useEffect(() => {
+        workCardAction();
+    },
+    [gridDataID])
 
     const worksArray = chooseData.map(data => (
         <WorkCard
             title={data.title}
             stack={data.stack.join(" / ")}
             gridImg={data.gridImg}
-            onClick={workCardAction}
+            onClick={() => {
+                setGridDataID(data.id-1);
+            }}
+                
+        
         />
     ));
 
     return (
         <React.Fragment>
-            <Modal show={showWorkModal} onCancel={closeWorkModalHandler} contentClass="place-item__modal-content" footerClass="place-item__modal-actions">
+            <Modal show={showWorkModal} onCancel={closeWorkModalHandler} contentClass="place-item__modal-content" footerClass="place-item__modal-actions" title={modalTitle} images={modalImage} stack={modalStack}>
                 <div className="map-container">
                 </div>
             </Modal>
             <div className="work-container">
-                <div className="filter">
+            <div className="filter">
                     <div className="filter-intro">Filter By:</div>
                     <ul>
                         <li data-value="all" onClick={changeFilter}>All</li>
                         <li data-value="React" onClick={changeFilter}>React</li>
                         <li data-value="Node" onClick={changeFilter}>Node</li>
                         <li data-value="Express" onClick={changeFilter}>Express</li>
-                        <li data-value="MySQL" onClick={changeFilter}>MySQL</li>
-                        <li data-value="PostgreSQL" onClick={changeFilter}>PostgreSQL</li>
-                        <li data-value="MongoDB" onClick={changeFilter}>MongoDB</li>
+                        <li data-value="SQL" onClick={changeFilter}>SQL</li>
+                        <li data-value="NoSQL" onClick={changeFilter}>NoSQL</li>
                         <li data-value="PHP" onClick={changeFilter}>PHP</li>
                         <li data-value="Sass" onClick={changeFilter}>Sass</li>
                         <li data-value="Branding" onClick={changeFilter}>Branding</li>
                         <li data-value="Print" onClick={changeFilter}>Print</li>
                     </ul>
-                </div>
+    </div>
                 <div className="workgrid">
                     {worksArray}
                 </div>

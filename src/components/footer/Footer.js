@@ -7,7 +7,7 @@ import './Footer.scss';
 const Footer = () => {
     return (
         <footer>
-            <SocialIcon iconClass={"github-new-01.svg"} socialNetwork="github" />
+            <SocialIcon iconClass={"github-grey.png"} socialNetwork="github" />
             <SocialIcon iconClass={"twitter.svg"} socialNetwork="twitter" />
             <SocialIcon iconClass={"linkedin-new3.svg"} socialNetwork="linkedin" />
         </footer>

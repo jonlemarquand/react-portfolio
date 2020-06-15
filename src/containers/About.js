@@ -13,18 +13,24 @@ const About = () => {
             <h1>About Me</h1>
             <div className="aboutPage">
                 <div className="skills">
-                    <h2>Front-End</h2>
-                    <p>React</p>
-                    <p>SASS, LESS</p>
-                    <FontAwesomeIcon icon={faHtml5} />
-                    <FontAwesomeIcon icon={faCss3Alt} />
-                    <FontAwesomeIcon icon={faFigma} />
-                    <p>HTML, CSS, Javascript</p>
+                    <div className="skillsbox">
+                        <h2>Front-End</h2>
+                        <p>React</p>
+                        <p>SASS, LESS</p>
+                        <FontAwesomeIcon icon={faHtml5} />
+                        <FontAwesomeIcon icon={faCss3Alt} />
+                        <FontAwesomeIcon icon={faFigma} />
+                        <p>HTML, CSS, Javascript</p>
+                    </div>
+                    <div className="skillsbox">
                     <h2>Back-End</h2>
                     <p>Node, Express, PHP</p>
                     <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+                    </div>
+                    <div className="skillsbox">
                     <h2>Other</h2>
                     <p>Photoshop, InDesign, Figma</p>
+                    </div>
                 </div>
                 <div className="about-me">
                     <p>I’m a web developer, looking to take on big and small projects. I’ve always been a big fan of messing around with computers ever since being surprised with a mousemat, which I assumed had been for dad’s old Amstrad. Instead, it was for our family’s first computer, complete with a whopping 3gb hard drive. After watching the Weezer video that shipped with Windows 95, I was hooked. And then came the internet…</p>

@@ -11,13 +11,13 @@ const ModalOverlay = props => {
     const content = (
         <div className={`modal ${props.className}`} style={props.style}>
             <div className="modal-img-container">
-                <img src={require("../../assets/images/slide_abg1.jpg")} alt="TI25" className="modal-img" />
+                <img src={require(`../../assets/images/${props.images}`)} alt="TI25" className="modal-img" />
             </div>
             <div className="modal-text">
                 <div className="modalTop">
                     <div>
-                        <div className="modalExplainer">Website</div>
-                        <div className="modalTitle">I Know Mando</div>
+                        <div className="modalExplainer">{props.stack.join(" / ")}</div>
+                        <div className="modalTitle">{props.title}</div>
                     </div>
                     <div className="link-icons">
                         <SocialIcon iconClass={"github-new-01.svg"} socialNetwork="github" />
