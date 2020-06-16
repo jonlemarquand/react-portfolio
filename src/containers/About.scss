@@ -7,12 +7,19 @@
         color: $dblue;
         font-family: 'Open Sans', sans-serif;
     }
+    h2 {
+        margin-bottom: 20px;
+    }
     .skills {
         width: 50%;
         margin-right: 30px;
         text-align: right;
         .skillsbox {
             margin-bottom: 40px;
+        }
+        .skillsline {
+            display: flex;
+            justify-content: flex-end;
         }
     
     }

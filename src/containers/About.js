@@ -1,8 +1,7 @@
 import React from "react";
 import { withRouter } from 'react-router';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faFigma } from '@fortawesome/free-brands-svg-icons';
 
+import AboutIcon from '../components/shared/AboutIcon';
 import Layout from '../components/shared/Layout';
 
 import './About.scss';
@@ -15,21 +14,41 @@ const About = () => {
                 <div className="skills">
                     <div className="skillsbox">
                         <h2>Front-End</h2>
-                        <p>React</p>
-                        <p>SASS, LESS</p>
-                        <FontAwesomeIcon icon={faHtml5} />
-                        <FontAwesomeIcon icon={faCss3Alt} />
-                        <FontAwesomeIcon icon={faFigma} />
-                        <p>HTML, CSS, Javascript</p>
+                        <div className="skillsline">
+                            <AboutIcon iconName="React" iconSrc="react"/>
+                        </div>
+                        <div className="skillsline">
+                            <AboutIcon iconName="Sass" iconSrc="sass"/>
+                            <AboutIcon iconName="Less" iconSrc="less"/>
+                        </div>
+                        <div className="skillsline">
+                            <AboutIcon iconName="HTML5" iconSrc="html5"/>
+                            <AboutIcon iconName="CSS3" iconSrc="css3"/>
+                            <AboutIcon iconName="Javascript" iconSrc="javascript"/>
+                        </div>
                     </div>
                     <div className="skillsbox">
                     <h2>Back-End</h2>
-                    <p>Node, Express, PHP</p>
-                    <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+                    <div className="skillsline">
+                            <AboutIcon iconName="Node" iconSrc="nodejs"/>
+                            <AboutIcon iconName="ExpressJS" iconSrc="express"/>
+                            <AboutIcon iconName="PHP" iconSrc="php"/>
+                    </div>
+                    <div className="skillsline">
+                                <AboutIcon iconName="MySQL" iconSrc="mysql"/>
+                                <AboutIcon iconName="PostgreSQL" iconSrc="postgres"/>
+                                <AboutIcon iconName="MongoDB" iconSrc="mongodb"/>
+                                <AboutIcon iconName="Redis" iconSrc="redis"/>
+                        </div>
                     </div>
                     <div className="skillsbox">
-                    <h2>Other</h2>
-                    <p>Photoshop, InDesign, Figma</p>
+                        <h2>Other</h2>
+                        <div className="skillsline">
+                                <AboutIcon iconName="Photoshop" iconSrc="photoshop"/>
+                                <AboutIcon iconName="InDesign" iconSrc="indesign"/>
+                                <AboutIcon iconName="Figma" iconSrc="figma"/>
+                                <AboutIcon iconName="Jest" iconSrc="jest"/>
+                        </div>
                     </div>
                 </div>
                 <div className="about-me">
