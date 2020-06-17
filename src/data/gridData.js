@@ -60,7 +60,7 @@ const GridData = [
         infoText: "<p>This is a test</p>",
         stack: ["Node", "PostgreSQL"],
         filterStack: ["Node", "SQL"],
-        gridImg: "cpei2.jpg",
+        gridImg: "tencount.jpg",
         live: "https://www.iknowmando.com",
         github: "https://www.iknowmando.com",
         imgOne: "cpei2.jpg",
