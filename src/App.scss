@@ -14,6 +14,11 @@ a {
 h1, h2 {
     font-family: "Montserrat", sans-serif;
     color: $dblue;
+
+    a {
+        color: $lblue;
+        text-decoration: none;
+    }
 }
 
 h1 {
