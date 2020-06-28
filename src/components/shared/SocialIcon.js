@@ -2,11 +2,13 @@ import React from "react";
 
 import './SocialIcon.scss';
 
-const SocialIcon = ({ iconClass, socialNetwork }) => {
+const SocialIcon = ({ socialNetwork, socialLink }) => {
 
     return (
-        <div className={`social ${socialNetwork}`}>
-        </div>
+        <a href={socialLink} target="_blank" rel='noreferrer'>
+            <div className={`social ${socialNetwork}`}>
+            </div>
+        </a>
     )
 }
 
