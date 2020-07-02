@@ -13,7 +13,7 @@ const GridData = [
         filterStack: ["React", "Node", "Express", "SQL", "NoSQL"],
         gridImg: "chordtheory.jpg",
         live: "https://chordtheory.jonlemarquand.com",
-        github: "https://www.iknowmando.com",
+        github: "https://github.com/jonlemarquand/chord-memory",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -31,7 +31,7 @@ const GridData = [
         filterStack: ["Javascript", "Sass"],
         gridImg: "mando02.jpg",
         live: "https://www.iknowmando.com",
-        github: "https://www.iknowmando.com",
+        github: "https://github.com/jonlemarquand/mandolin",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -66,7 +66,7 @@ const GridData = [
         filterStack: ["Drupal", "PHP", "SQL"],
         gridImg: "cpei.png",
         live: "https://www.antibriberyguidance.org",
-        github: "https://www.iknowmando.com",
+        github: "https://github.com/jonlemarquand/abg-homepage",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -84,7 +84,7 @@ const GridData = [
         filterStack: ["Node", "SQL"],
         gridImg: "tencount.jpg",
         live: "https://www.tencountstats.com",
-        github: "https://www.iknowmando.com",
+        github: "https://github.com/jonlemarquand/tencountapi",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -100,7 +100,7 @@ const GridData = [
         filterStack: ["Drupal", "PHP"],
         gridImg: "cpei2.jpg",
         live: "https://www.transparency.org.uk/cpei",
-        github: "https://www.iknowmando.com",
+        github: "https://github.com/jonlemarquand/cpei",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -199,7 +199,7 @@ const GridData = [
         filterStack: ["React"],
         gridImg: "portfolio.jpg",
         live: "https://www.jonlemarquand.com",
-        github: "https://www.iknowmando.com",
+        github: "https://github.com/jonlemarquand/react-portfolio",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
