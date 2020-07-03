@@ -10,12 +10,12 @@ const GridData = [
             <p>However, jazz has a lot to it. One question set wouldn’t be enough, and so after initially just creating a javascript game, I decided to expand it to be built with react and node, as well as a PostgreSQL database to store user info (such as stats on how many right answers a user got) and redis for additional security in signing people in with tokens.</p>
         </div>],
         stack: ["React", "Node", "PostgreSQL"],
-        filterStack: ["React", "Node", "Express", "SQL", "NoSQL"],
+        filterStack: ["React", "Node", "Express", "SQL", "NoSQL", "Sass"],
         gridImg: "chordtheory.jpg",
         live: "https://chordtheory.jonlemarquand.com",
         github: "https://github.com/jonlemarquand/chord-memory",
-        imgOne: "cpei2.jpg",
-        imgTwo: "cpei2.jpg",
+        imgOne: "chordtheory-display2.jpg",
+        imgTwo: "chordtheory-display1.jpg",
         imgThree: "cpei2.jpg"
     },
     {
@@ -32,7 +32,7 @@ const GridData = [
         gridImg: "mando02.jpg",
         live: "https://www.iknowmando.com",
         github: "https://github.com/jonlemarquand/mandolin",
-        imgOne: "cpei2.jpg",
+        imgOne: "mando-display1.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -45,7 +45,7 @@ const GridData = [
             <p>Once the backend API was sorted, I began to build a front end in React, with the basic pages as well as a couple of test artist pages. The next challenge was to form automatically generating pages, with an artist image and stats, based on a query api address.</p>
         </div>],
         stack: ["React", "Node"],
-        filterStack: ["React", "Node"],
+        filterStack: ["React", "Node", "Sass"],
         gridImg: "quaver.jpg",
         live: "https://quavermusic.jonlemarquand.com",
         github: "https://www.iknowmando.com",
@@ -67,7 +67,7 @@ const GridData = [
         gridImg: "cpei.png",
         live: "https://www.antibriberyguidance.org",
         github: "https://github.com/jonlemarquand/abg-homepage",
-        imgOne: "cpei2.jpg",
+        imgOne: "slide_abg1.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -81,7 +81,7 @@ const GridData = [
             <p>The React frontend is still currently in development.</p>
         </div>],
         stack: ["Node", "PostgreSQL"],
-        filterStack: ["Node", "SQL"],
+        filterStack: ["Node", "SQL", "Sass"],
         gridImg: "tencount.jpg",
         live: "https://www.tencountstats.com",
         github: "https://github.com/jonlemarquand/tencountapi",
@@ -101,7 +101,7 @@ const GridData = [
         gridImg: "cpei2.jpg",
         live: "https://www.transparency.org.uk/cpei",
         github: "https://github.com/jonlemarquand/cpei",
-        imgOne: "cpei2.jpg",
+        imgOne: "slide_cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -113,7 +113,7 @@ const GridData = [
             <p>For the 2017 conference, I also drafted a spec of a microsite. However, as invitees were mostly internal signups from the church rather than external, it was decided to focus more on email marketing with direct links. I later built this site with React, as a personal project, integrating a signup form along with Stripe payment option. Although the customisation of the site is nice, the extra work, for a comparatively small event (around 300 people), on top of other responsibilities, would be better handled by Eventbrite or something similar.</p>
         </div>],
         stack: ["React"],
-        filterStack: ["React"],
+        filterStack: ["React", "Branding", "Sass"],
         gridImg: "lpcl.jpg",
         live: "https://www.lpcl.jonlemarquand.com",
         github: "https://www.iknowmando.com",
@@ -187,7 +187,7 @@ const GridData = [
         gridImg: "exhibition.jpg",
         live: "",
         github: "",
-        imgOne: "cpei2.jpg",
+        imgOne: "slide_ti253.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },

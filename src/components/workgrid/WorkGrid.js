@@ -46,7 +46,7 @@ const WorkGrid = () => {
 
     const changeModalData = () => {
         setModalTitle(GridData[gridDataID].title);
-        setModalImage(GridData[gridDataID].gridImg);
+        setModalImage(GridData[gridDataID].imgOne);
         setModalStack(GridData[gridDataID].stack);
         setModalText(GridData[gridDataID].infoText);
     }

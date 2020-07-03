@@ -26,6 +26,8 @@
     width: 50%;
     padding: 20px;
     border-left: $lblue 4px solid;
+    position: relative;
+
     .modalTop {
         display: flex;
         flex-direction: column;
@@ -83,3 +85,25 @@
     transition: all 200ms;
   }
   
+  .exitCross {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $lblue;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid $lblue;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+
+    &:hover {
+      background: $lblue;
+      color: $offwhite;
+    }
+  }

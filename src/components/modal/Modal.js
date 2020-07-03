@@ -14,6 +14,8 @@ const ModalOverlay = props => {
                 <img src={require(`../../assets/images/${props.images}`)} alt="TI25" className="modal-img" />
             </div>
             <div className="modal-text">
+                <div className="exitCross" onClick={props.onCancel}>&times;
+</div>
                 <div className="modalTop">
                     <div>
                         <div className="modalExplainer">{props.stack.join(" / ")}</div>
