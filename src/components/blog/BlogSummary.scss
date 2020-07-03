@@ -1,12 +1,51 @@
+@import 'assets/colours';
+
 .blog-summary {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 750px;
     margin-bottom: 40px;
+    cursor: pointer;
+
+    h2 {
+        padding: 0;
+        margin: 0;
+    }
 
     .blog-text {
         max-width: 600px;
     }
 
+    .blog-image {
+        border: 4px solid $lblue;
+        width: 100px;
+        height: 100px;
+        transition: 0.4s ease-out;
+    }
+
+    .blog-category {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: $lblue;
+    }
+
+    .blog-info {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: $dblue;
+    }
+
+    &:hover {
+        h2 {
+            color: $lblue;
+        }
+        .blog-info {
+            color: $lblue;
+        }
+        .blog-image {
+            width: 120px;
+            height: 120px;
+        }
+    }
 }
