@@ -11,10 +11,7 @@ const WorkGrid = () => {
     const [showWorkModal, setShowWorkModal] = useState(false);
     const [filterTarget, setFilterTarget] = useState("all");
     const [gridDataID, setGridDataID] = useState(1);
-    const [modalData, setModalData] = useState({
-        title: '',
-        stack: ["React", "Node"],
-    });
+
     const [modalTitle, setModalTitle] = useState("");
     const [modalStack, setModalStack] = useState(["React", "Node"]);
     const [modalImage, setModalImage] = useState("slide_abg1.jpg")
@@ -46,23 +43,19 @@ const WorkGrid = () => {
 
     const chooseData = (filterTarget === "all") ? GridData : filterData;
 
-    const changeModalData = () => {
+    const workCardAction = (data) => {
+        setGridDataID(data-1);
+        // changeModalData();
+        openWorkModalHandler();
+    }
+
+    useEffect(() => {
         setModalTitle(GridData[gridDataID].title);
         setModalImage(GridData[gridDataID].imgOne);
         setModalStack(GridData[gridDataID].stack);
         setModalText(GridData[gridDataID].infoText);
         setModalGithub(GridData[gridDataID].github);
-        setModalLive(GridData[gridDataID].live);
-    }
-
-    const workCardAction = () => {
-        changeModalData();
-        openWorkModalHandler();
-    }
-
-    useEffect(() => {
-        workCardAction();
-    },
+        setModalLive(GridData[gridDataID].live);    },
     [gridDataID])
 
     const worksArray = chooseData.map(data => (
@@ -70,11 +63,8 @@ const WorkGrid = () => {
             title={data.title}
             stack={data.stack.join(" / ")}
             gridImg={data.gridImg}
-            onClick={() => {
-                setGridDataID(data.id-1);
-            }}
-                
-        
+            data-gridValue={data.id-1}
+            onClick={() => {workCardAction(data.id)}}
         />
     ));
 
