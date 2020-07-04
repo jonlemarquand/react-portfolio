@@ -151,8 +151,8 @@ const GridData = [
         stack: ["Branding", "Print"],
         filterStack: ["Branding", "Print"],
         gridImg: "reports.jpg",
-        live: "",
-        github: "",
+        live: "https://www.transparency.org.uk",
+        github: " ",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -169,7 +169,7 @@ const GridData = [
         filterStack: ["Javascript", "SQL"],
         gridImg: "ddweb.jpg",
         live: "https://www.daviddevenish.com",
-        github: "",
+        github: " ",
         imgOne: "cpei2.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -185,8 +185,8 @@ const GridData = [
         stack: ["Print"],
         filterStack: ["Print", "Branding"],
         gridImg: "exhibition.jpg",
-        live: "",
-        github: "",
+        live: " ",
+        github: " ",
         imgOne: "slide_ti253.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"

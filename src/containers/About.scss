@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 
 .aboutPage {
@@ -23,11 +24,29 @@
         }
     
     }
-    
+
     .about-me {
         width: 50%;
         margin-left: 30px;
     }
+    @media (max-width: $phoneWidth) {
+        flex-direction: column;
+        align-items: center;
 
+        .skills {
+            width: 90%;
+            margin-right: 0;
+        }
+
+        .about-me {
+            width: 90%;
+            margin: 0;
+        }
+
+    }
 }
+
+
+
+
 

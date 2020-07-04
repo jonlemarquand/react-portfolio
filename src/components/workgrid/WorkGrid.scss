@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 
 .work-container {
@@ -18,7 +19,33 @@
     .filter-intro {
         padding: 5px 10px;
         width: 120px;
+    
+        @media (max-height: 670px) {
+            display: none;
+        }
+    
     }
+    @media (max-height: 801px) {
+        margin: 0;
+    }
+    @media (max-width: $phoneWidth) {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px; 
+    
+        .filter-intro {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: $iphonefiveWidth) {
+        margin: 0;
+    }
+
+    @media (max-width: $phoneWidth) and (min-height: 800px){
+        margin-top: 30px;
+    }
+
     ul {
         display: flex;
         justify-content: center;
@@ -27,10 +54,18 @@
         margin: 0;
         padding: 0;
         li {
-            margin: 0 20px;
+            margin: 0 5px;
             padding: 5px 10px;
             cursor: pointer;
             font-weight: 700;
+
+            @media (max-width: $phoneWidth) {
+                margin: 0;
+                font-size: 14px;
+            }
+            @media (max-width: $iphonefiveWidth) {
+                padding: 3px 10px;
+            }
 
         &.filter-active {
             background-color: $lblue;
@@ -46,4 +81,21 @@
     grid-template-columns: repeat(4, 242px);
     grid-template-rows: repeat(3, 187px);
     margin-top: 40px;
+
+    @media (max-width: $phoneWidth) {
+        grid-template-columns: repeat(3, 110px);
+        grid-template-rows: repeat(4, 85px);
+        margin-top: 20px;
+    }
+
+    @media (max-width: $iphonefiveWidth) {
+        grid-template-columns: repeat(3, 105px);
+        grid-template-rows: repeat(4, 81px);
+        margin-top: 20px;
+    }
+    @media (max-height: 801px) and (min-width: 600px) {
+        grid-template-columns: repeat(4, 210px);
+        grid-template-rows: repeat(3, 162px);
+        margin-top: 20px;
+    }
 }

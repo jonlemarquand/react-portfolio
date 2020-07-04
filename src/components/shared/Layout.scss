@@ -1,3 +1,5 @@
+@import 'assets/breakpoints';
+
 .defaultLayout {
     display: flex;
     flex-direction: column;
@@ -5,4 +7,14 @@
     align-items: center;
     height: 79vh;
     margin-top: 30px;
+
+    @media (max-width: $phoneWidth) {
+        margin-top: 0;
+        height: auto;
+    }
+
+    @media (max-height: 900px) {
+        margin-top: 10px;
+    }
+
 }

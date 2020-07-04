@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 
 .item {
@@ -20,6 +21,10 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+    @media (max-width: $phoneWidth) {
+        display:none;
+    }
+
     }
 
     &:hover .overlay {

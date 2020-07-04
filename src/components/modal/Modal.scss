@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 
 .modal {
@@ -10,10 +11,23 @@
     background: $offwhite;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     display: flex;
+  
+  @media (max-width: $phoneWidth) {
+    flex-direction: column;
+    width: 90%;
+    height: 94%;
+    top: 3%;
+    left: 5%;
   }
+
+}
 
 .modal-img-container {
     width: 50%;
+
+    @media (max-width: $phoneWidth) {
+      width: 100%;
+    }
 }
 
 .modal-img {
@@ -27,6 +41,14 @@
     padding: 20px;
     border-left: $lblue 4px solid;
     position: relative;
+
+    @media (max-width: $phoneWidth) {
+      width: calc(100% - 10px);
+      padding: 5px;
+      border-top: $lblue 4px solid;
+      border-left: 0px;
+      overflow: scroll;
+    }
 
     .modalTop {
         display: flex;
@@ -54,6 +76,12 @@
         color: $dblue;
 
     }
+
+    .link-icons {
+      display: flex;
+      justify-content: flex-start;
+    }
+    
     @media screen and (max-width: 1450px) {
         .modal-img-container {
             width: 50%;

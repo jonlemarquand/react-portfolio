@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 
 nav {
@@ -11,6 +12,16 @@ nav {
         color: $grey;
         margin: 0 20px;
         font-size: 14px;
+
+        @media (max-width: $phoneWidth) {
+            margin: 0 12px;
+            font-size: 12px;
+        }
+
+        @media (max-width: $iphonefiveWidth) {
+            margin: 0 8px;
+        }
+
         &:hover {
             color: $dblue;
         }

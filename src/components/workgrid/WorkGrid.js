@@ -19,6 +19,8 @@ const WorkGrid = () => {
     const [modalStack, setModalStack] = useState(["React", "Node"]);
     const [modalImage, setModalImage] = useState("slide_abg1.jpg")
     const [modalText, setModalText] = useState("");
+    const [modalGithub, setModalGithub] = useState("");
+    const [modalLive, setModalLive] = useState("");
 
 
 
@@ -49,6 +51,8 @@ const WorkGrid = () => {
         setModalImage(GridData[gridDataID].imgOne);
         setModalStack(GridData[gridDataID].stack);
         setModalText(GridData[gridDataID].infoText);
+        setModalGithub(GridData[gridDataID].github);
+        setModalLive(GridData[gridDataID].live);
     }
 
     const workCardAction = () => {
@@ -76,7 +80,7 @@ const WorkGrid = () => {
 
     return (
         <React.Fragment>
-            <Modal show={showWorkModal} onCancel={closeWorkModalHandler} contentClass="place-item__modal-content" footerClass="place-item__modal-actions" title={modalTitle} images={modalImage} stack={modalStack} theModalText={modalText}>
+            <Modal show={showWorkModal} onCancel={closeWorkModalHandler} contentClass="place-item__modal-content" footerClass="place-item__modal-actions" title={modalTitle} images={modalImage} stack={modalStack} theModalText={modalText} github={modalGithub} livelink={modalLive}>
                 <div className="map-container">
                 </div>
             </Modal>

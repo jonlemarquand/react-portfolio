@@ -5,7 +5,7 @@ import "./WorkCard.scss"
 
 const WorkCard = ({ title, stack, gridImg, onClick, dataID }) => {
   return (
-    <div className="item">
+    <div className="item" onClick={onClick}>
       <img className="item-img" src={require(`../../assets/images/${gridImg}`)} alt={title} />
       <div className="overlay" onClick={onClick}>
         <div className="project-text pt-large">

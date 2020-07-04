@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,700|Open+Sans&amp;display=swap');
 
@@ -24,11 +25,23 @@ h1, h2 {
 h1 {
     font-size: 24px;
     font-weight: 700;
+
+    @media (max-width: $phoneWidth) {
+        font-size: 18px;
+    }
 }
 
 h2 {
     font-size: 18px;
     font-weight: 500;
+    @media (max-width: $phoneWidth) {
+        font-size: 16px;
+    }
+    &.intro-text {
+        @media (max-height: 641px) {
+            display: none;
+        }
+    }
 }
 
 .intro-text {
@@ -37,4 +50,10 @@ h2 {
 
 .lblue {
     color: $lblue;
+}
+
+.App {
+    @media (max-width: $tabletWidth) {
+        width: 100%;
+    }
 }

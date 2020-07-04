@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 
 .logo {
@@ -7,4 +8,8 @@
     margin: 0 20px;
     color: $dblue;
     font-weight: 700;
+
+    @media (max-width: $phoneWidth) {
+        margin: 0 10px;
+    }
 }
