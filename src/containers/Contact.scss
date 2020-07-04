@@ -1,3 +1,4 @@
+@import 'assets/breakpoints';
 @import 'assets/colours';
 
 .contact-form {
@@ -61,6 +62,15 @@
             background-color: $dblue;
             color: $offwhite;
             border: 2px solid $dblue;
+        }
+    }
+
+    @media (max-width: $phoneWidth) {
+        width: 80%;
+        margin: 0 20px;
+
+        textarea {
+            height: 100px;
         }
     }
 
