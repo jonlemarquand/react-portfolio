@@ -3,9 +3,7 @@ import { withRouter } from 'react-router';
 import {
     BrowserView,
     MobileView,
-    isBrowser,
-    isMobile
-  } from "react-device-detect";
+} from "react-device-detect";
 
 import AboutIcon from '../components/shared/AboutIcon';
 import Layout from '../components/shared/Layout';

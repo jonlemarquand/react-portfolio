@@ -6,7 +6,7 @@ const SocialIcon = ({ socialNetwork, socialLink }) => {
 
     if (socialLink) {
     return (
-        <a href={socialLink} target="_blank" rel='noreferrer'>
+        <a href={socialLink} target="_blank" rel='noopener noreferrer'>
             <div className={`social ${socialNetwork}`}>
             </div>
         </a>
