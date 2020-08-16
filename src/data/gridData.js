@@ -27,11 +27,11 @@ const GridData = [
             <p>Well, I initially only had plans to use it myself, so I went down the javascript route, figuring if I could get all the info in, that would almost be the project complete. The site’s Javascript is fairly straight forward, with IF statements running if a change is detected on the buttons. From there, the script first hides all the circles (undoing the previous switch), and then runs the chord notes to add them back in. This allows very quick changes to be made, all within the same CSS grid.</p>
             <p>Version 1 currently runs well, but is not as straight forward to input more options (such as positions), so a version built with React is also being developed.</p>
         </div>],
-        stack: ["Javascript", "Sass"],
-        filterStack: ["Javascript", "Sass"],
+        stack: ["React"],
+        filterStack: ["React, Sass"],
         gridImg: "mando02.jpg",
         live: "https://www.iknowmando.com",
-        github: "https://github.com/jonlemarquand/mandolin",
+        github: "https://github.com/jonlemarquand/mando-react",
         imgOne: "mando-display1.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
@@ -49,7 +49,7 @@ const GridData = [
         gridImg: "quaver.jpg",
         live: "https://quavermusic.jonlemarquand.com",
         github: "https://www.iknowmando.com",
-        imgOne: "cpei2.jpg",
+        imgOne: "quaver-display1.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -85,7 +85,7 @@ const GridData = [
         gridImg: "tencount.jpg",
         live: "https://www.tencountstats.com",
         github: "https://github.com/jonlemarquand/tencountapi",
-        imgOne: "cpei2.jpg",
+        imgOne: "tencount.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -96,12 +96,12 @@ const GridData = [
             <p>Transparency International UK developed the Corporate Political Engagement Index to measure what information 104 leading global companies make public about how they engage with politics and rank them based on this. To accompany the report that was produced, they also wanted a microsite to be launched, that would also incorporate an animated video explaining the results. It needed to include a filterable table of the results, along both the themes of the Index itself, as well as by the company groupings, so comparisons could be made between industries. Although the results table was mainly to be used by the public, as part of TI-UK’s work they also wanted to help businesses improve. Therefore, the brief also included a self-assessment quiz for companies that weren’t selected for the Index this time as well as best practice guidelines and a link to the full report.</p>
             <p>After some initial discussions with the team (see above for sketched wireframes) I designed static versions of each screen of the one-page website. A one-page website felt most natural, as the information became more in depth as the user scrolled down. The microsite I developed for this project was originally built using Webflow. This had both highs and lows, in that it was easy to show  the client how the site was developing and make changes, however, the more technical side of the project (a self-assessment quiz) proved impossible to do in Webflow and so I rebuilt the site based on the layout, and incorporated the self-assessment quiz via SurveyMonkey, which the team were already using for monitoring other projects with businesses.</p>
         </div>],
-        stack: ["Drupal", "PHP"],
-        filterStack: ["Drupal", "PHP"],
+        stack: ["React"],
+        filterStack: ["React", "Sass"],
         gridImg: "cpei2.jpg",
         live: "https://www.transparency.org.uk/cpei",
         github: "https://github.com/jonlemarquand/cpei",
-        imgOne: "slide_cpei2.jpg",
+        imgOne: "cpei-display1.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -117,7 +117,7 @@ const GridData = [
         gridImg: "lpcl.jpg",
         live: "https://www.lpcl.jonlemarquand.com",
         github: "https://www.iknowmando.com",
-        imgOne: "cpei2.jpg",
+        imgOne: "lpcl-display1.png",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -131,12 +131,12 @@ const GridData = [
             <p>Overall, it was a successful website that allowed constituents to get in touch with Adrian easier and see what he was doing for them.</p>
             <p><em>Note: Adrian Bailey is now no longer the MP for West Bromwich West having decided to step down at the December 2019 election, thus the site is no longer live, having previously been updated around July 2018.</em></p>
         </div>],
-        stack: ["Wordpress", "PHP", "MySQL"],
-        filterStack: ["Wordpress", "PHP", "SQL"],
+        stack: ["Laravel", "PostgreSQL"],
+        filterStack: ["Laravel", "PHP", "SQL"],
         gridImg: "adrianbailey.jpg",
         live: "https://www.adrianbaileymp.com",
         github: "https://www.iknowmando.com",
-        imgOne: "cpei2.jpg",
+        imgOne: "adrianbailey.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -153,7 +153,7 @@ const GridData = [
         gridImg: "reports.jpg",
         live: "https://www.transparency.org.uk",
         github: " ",
-        imgOne: "cpei2.jpg",
+        imgOne: "reports-display1.png",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -165,12 +165,12 @@ const GridData = [
             <p>At the beginning of the project, Wordpress seemed like the obvious solution to the issue of ever-changing content. As I wouldn’t be continually updating the site with new content, instead a communications officer at the organisation would be, it needed a user-friendly experience for someone with minimal experience in web development. To enable this to function, I developed an easy to use interface where the user would simply have to copy/paste the YouTube/ Vimeo/ Soundcloud link as well as the accompanying text and header image and they would have a post.</p>
             <p>Since launch, the site has been updated by a couple of people, and so doesn’t quite look like my initial designs, although it seems the same functionality has remained.</p>
         </div>],
-        stack: ["Wordpress", "PHP", "MySQL"],
-        filterStack: ["Javascript", "SQL"],
+        stack: ["Laravel", "PostgreSQL"],
+        filterStack: ["Laravel", "PHP", "SQL"],
         gridImg: "ddweb.jpg",
         live: "https://www.daviddevenish.com",
-        github: " ",
-        imgOne: "cpei2.jpg",
+        github: "https://github.com/jonlemarquand/devenish",
+        imgOne: "ddweb.jpg",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     },
@@ -200,7 +200,7 @@ const GridData = [
         gridImg: "portfolio.jpg",
         live: "https://www.jonlemarquand.com",
         github: "https://github.com/jonlemarquand/react-portfolio",
-        imgOne: "cpei2.jpg",
+        imgOne: "portfolio-display1.png",
         imgTwo: "cpei2.jpg",
         imgThree: "cpei2.jpg"
     }
